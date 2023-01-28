@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,500&display=swap');
+
+.App {
+  text-align: center;
+  background-image: linear-gradient(5deg, #927f75 0, #6f6d6b 16.67%, #4a5962 33.33%, #1f4459 50%, #003051 66.67%, #001e49 83.33%, #000941 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 6em;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1%;
+  color: white;
+}
+
+span{
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  z-index: 5;
+  font-family: 'Kanit', sans-serif;
+}
+
+.utd{
+  background: transparent;
+  border: 2px solid yellowgreen;
+  border-radius: 0.4em;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  bottom: 180px;
+}
+
+.utd::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 120.71% 50%, #cbff3f 0, #a9ff40 16.67%, #7eff3f 33.33%, #3cf23c 50%, #00e43d 66.67%, #00d944 83.33%, #00d151 100%);
+  opacity: 0.2;
+  position: absolute;
+  border-radius: 50px;
+  transition: all 1s ease;
+  transform: translateX(-101%);
+  z-index: 1;
+}
+
+.utd:hover::before{
+  transform: translateX(0);
+  border-radius: 0;
+}
+
+.git{
+  background: transparent;
+  border: 2px solid #111418;
+  border-radius: 0.4em;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  bottom: 180px;
+}
+
+.git::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(270deg, #0785af 0, #1e6484 25%, #1f4459 50%, #182631 75%, #07090b 100%);
+  opacity: 0.2;
+  position: absolute;
+  border-radius: 50px;
+  transition: all 1s ease;
+  transform: translateX(-101%);
+  z-index: 1;
+}
+
+.git:hover::before{
+  transform: translateX(0);
+  border-radius: 0;
+}
+
+.insta{
+  background: transparent;
+  border: 2px solid #c72cbf;
+  border-radius: 0.4em;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  bottom: 180px;
+}
+
+.insta::before{
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  opacity: 0.2;
+  position: absolute;
+  border-radius: 50px;
+  transition: all 1s ease;
+  transform: translateX(-101%);
+  z-index: 1;
+}
+
+.insta:hover::before{
+  transform: translateX(0);
+  border-radius: 0;
+}
+
+#googleMaps{
+  position: absolute;
+  width: 70rem;
+  height: 30rem;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
